@@ -32,8 +32,7 @@
 (eval-when-compile
   (require 'cl-lib)
   (defmacro re-opt (opts)
-    `(concat "\\_<" (regexp-opt opts) "\\_>")))
-
+    `(concat "\\_<" (regexp-opt ,opts) "\\_>")))
 
 (provide 'anki-mode)
 ;;; anki-mode.el ends here
